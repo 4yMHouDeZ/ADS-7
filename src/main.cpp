@@ -1,9 +1,12 @@
+// Copyright 2021 NNTU-CS
 #include "train.h"
-#include <iostream>
+
 #include <iomanip>
+#include <iostream>
 
 int main() {
-    std::cout << "[cars]" << ' ' << "[false]" << ' ' << "[true]" << ' ' << "[true&false]" << std::endl;
+    std::cout << "[cars]" << ' ' << "[false]" << ' '
+     << "[true]" << ' ' << "[true&false]" << std::endl;
     for (int i = 10; i < 101; i += 10) {
         Train train1, train2, train3;
         for (int j = 0; j < i; j++) {
@@ -14,7 +17,8 @@ int main() {
         train1.getLength();
         train2.getLength();
         train3.getLength();
-        
-        std::cout << i << ' ' << train1.getOpCount() << ' ' << train2.getOpCount() << ' ' << train3.getOpCount() << std::endl;
+
+        std::cout << i << ' ' << train1.getOpCount() << ' ' 
+        << train2.getOpCount() << ' ' << train3.getOpCount() << std::endl;
     }
 }
